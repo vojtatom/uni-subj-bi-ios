@@ -1,0 +1,6 @@
+framework module Pods_BI_IOS_DU1 {
+  umbrella header "Pods-BI-IOS-DU1-umbrella.h"
+
+  export *
+  module * { export * }
+}

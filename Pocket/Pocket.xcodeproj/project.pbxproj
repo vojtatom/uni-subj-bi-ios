@@ -1,0 +1,573 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		87F65B97AB22500B401E3C9F /* Pods_Pocket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48FBE74A5D72E09DD697F669 /* Pods_Pocket.framework */; };
+		BC023B85202C5CE600567539 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC023B84202C5CE600567539 /* AppDelegate.swift */; };
+		BC023B87202C5CE600567539 /* OverviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC023B86202C5CE600567539 /* OverviewViewController.swift */; };
+		BC023B8D202C5CE600567539 /* Pocket.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BC023B8B202C5CE600567539 /* Pocket.xcdatamodeld */; };
+		BC023B8F202C5CE600567539 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC023B8E202C5CE600567539 /* Assets.xcassets */; };
+		BC589030202C7E1900B13FBD /* OverviewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC58902F202C7E1900B13FBD /* OverviewViewModel.swift */; };
+		BC589034202C8B7600B13FBD /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC589033202C8B7600B13FBD /* DataManager.swift */; };
+		BC5BDE3A20323F230001E648 /* BalanceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5BDE3920323F230001E648 /* BalanceCell.swift */; };
+		BC5BDE3C203247A50001E648 /* GradientCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5BDE3B203247A50001E648 /* GradientCell.swift */; };
+		BC5BDE4020325DD10001E648 /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5BDE3F20325DD10001E648 /* SettingsViewModel.swift */; };
+		BC6BB06D2030AED600A42D18 /* RepeatedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC6BB06C2030AED600A42D18 /* RepeatedViewModel.swift */; };
+		BC6BB06F2030B7D500A42D18 /* TransactionDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC6BB06E2030B7D500A42D18 /* TransactionDetailViewController.swift */; };
+		BC6BB0712030B86400A42D18 /* TransactionDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC6BB0702030B86400A42D18 /* TransactionDetailViewModel.swift */; };
+		BC6BB0732030C9A500A42D18 /* TransactionModifyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC6BB0722030C9A500A42D18 /* TransactionModifyViewModel.swift */; };
+		BC6BB0752030CF4700A42D18 /* RepeatedModifyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC6BB0742030CF4700A42D18 /* RepeatedModifyViewModel.swift */; };
+		BC6BB0772030E53300A42D18 /* RepeatedDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC6BB0762030E53300A42D18 /* RepeatedDetailViewController.swift */; };
+		BC6BB0792030E68A00A42D18 /* RepeatedDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC6BB0782030E68A00A42D18 /* RepeatedDetailViewModel.swift */; };
+		BC6D2A30202DAE160083C305 /* TransactionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC6D2A2F202DAE160083C305 /* TransactionViewController.swift */; };
+		BC6D2A32202DB3820083C305 /* TransactionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC6D2A31202DB3820083C305 /* TransactionViewModel.swift */; };
+		BC6D2A34202DB5D00083C305 /* TransactionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC6D2A33202DB5D00083C305 /* TransactionCell.swift */; };
+		BC7B9C09202C9AEE00496A5E /* TransactionModifyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7B9C08202C9AEE00496A5E /* TransactionModifyViewController.swift */; };
+		BC7B9C0B202CA52300496A5E /* ThemeLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7B9C0A202CA52300496A5E /* ThemeLayout.swift */; };
+		BC8926C420303A3C00CE5933 /* RepeatedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8926C320303A3C00CE5933 /* RepeatedViewController.swift */; };
+		BC8926C620303AF800CE5933 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8926C520303AF800CE5933 /* SettingsViewController.swift */; };
+		BC8926C820304B5700CE5933 /* RepeatedManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8926C720304B5700CE5933 /* RepeatedManager.swift */; };
+		BC8926CA20305CFC00CE5933 /* RepeatedModifyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8926C920305CFC00CE5933 /* RepeatedModifyViewController.swift */; };
+		BC8926CC2030624C00CE5933 /* FormCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8926CB2030624C00CE5933 /* FormCell.swift */; };
+		BC8926CE2030835700CE5933 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8926CD2030835700CE5933 /* Helpers.swift */; };
+		BCE415BE2031BF7D00675073 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE415BD2031BF7D00675073 /* GradientView.swift */; };
+		BCE415C02031C5BB00675073 /* RepetedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE415BF2031C5BB00675073 /* RepetedCell.swift */; };
+		BCE415C22031C5E500675073 /* InfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE415C12031C5E500675073 /* InfoCell.swift */; };
+		BCE415C42031C61000675073 /* LinkCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE415C32031C61000675073 /* LinkCell.swift */; };
+		BCE415C72031C8C100675073 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE415C62031C8C100675073 /* BaseViewModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		48FBE74A5D72E09DD697F669 /* Pods_Pocket.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pocket.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B4A51A6DA13623753A582A4 /* Pods-Pocket.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pocket.release.xcconfig"; path = "Pods/Target Support Files/Pods-Pocket/Pods-Pocket.release.xcconfig"; sourceTree = "<group>"; };
+		BC023B81202C5CE600567539 /* Pocket.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pocket.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC023B84202C5CE600567539 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BC023B86202C5CE600567539 /* OverviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverviewViewController.swift; sourceTree = "<group>"; };
+		BC023B8C202C5CE600567539 /* Pocket.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Pocket.xcdatamodel; sourceTree = "<group>"; };
+		BC023B8E202C5CE600567539 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BC023B93202C5CE600567539 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BC58902F202C7E1900B13FBD /* OverviewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverviewViewModel.swift; sourceTree = "<group>"; };
+		BC589033202C8B7600B13FBD /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		BC5BDE3920323F230001E648 /* BalanceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalanceCell.swift; sourceTree = "<group>"; };
+		BC5BDE3B203247A50001E648 /* GradientCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientCell.swift; sourceTree = "<group>"; };
+		BC5BDE3F20325DD10001E648 /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
+		BC676C502032D99F00D04EFC /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		BC6BB06C2030AED600A42D18 /* RepeatedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepeatedViewModel.swift; sourceTree = "<group>"; };
+		BC6BB06E2030B7D500A42D18 /* TransactionDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionDetailViewController.swift; sourceTree = "<group>"; };
+		BC6BB0702030B86400A42D18 /* TransactionDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionDetailViewModel.swift; sourceTree = "<group>"; };
+		BC6BB0722030C9A500A42D18 /* TransactionModifyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionModifyViewModel.swift; sourceTree = "<group>"; };
+		BC6BB0742030CF4700A42D18 /* RepeatedModifyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepeatedModifyViewModel.swift; sourceTree = "<group>"; };
+		BC6BB0762030E53300A42D18 /* RepeatedDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepeatedDetailViewController.swift; sourceTree = "<group>"; };
+		BC6BB0782030E68A00A42D18 /* RepeatedDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepeatedDetailViewModel.swift; sourceTree = "<group>"; };
+		BC6D2A2F202DAE160083C305 /* TransactionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionViewController.swift; sourceTree = "<group>"; };
+		BC6D2A31202DB3820083C305 /* TransactionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionViewModel.swift; sourceTree = "<group>"; };
+		BC6D2A33202DB5D00083C305 /* TransactionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionCell.swift; sourceTree = "<group>"; };
+		BC7B9C08202C9AEE00496A5E /* TransactionModifyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionModifyViewController.swift; sourceTree = "<group>"; };
+		BC7B9C0A202CA52300496A5E /* ThemeLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeLayout.swift; sourceTree = "<group>"; };
+		BC8926C320303A3C00CE5933 /* RepeatedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepeatedViewController.swift; sourceTree = "<group>"; };
+		BC8926C520303AF800CE5933 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		BC8926C720304B5700CE5933 /* RepeatedManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepeatedManager.swift; sourceTree = "<group>"; };
+		BC8926C920305CFC00CE5933 /* RepeatedModifyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepeatedModifyViewController.swift; sourceTree = "<group>"; };
+		BC8926CB2030624C00CE5933 /* FormCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormCell.swift; sourceTree = "<group>"; };
+		BC8926CD2030835700CE5933 /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
+		BCE415BD2031BF7D00675073 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		BCE415BF2031C5BB00675073 /* RepetedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepetedCell.swift; sourceTree = "<group>"; };
+		BCE415C12031C5E500675073 /* InfoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoCell.swift; sourceTree = "<group>"; };
+		BCE415C32031C61000675073 /* LinkCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkCell.swift; sourceTree = "<group>"; };
+		BCE415C62031C8C100675073 /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
+		F78335CDB98DB7631FD0B9F1 /* Pods-Pocket.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pocket.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Pocket/Pods-Pocket.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BC023B7E202C5CE600567539 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87F65B97AB22500B401E3C9F /* Pods_Pocket.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		97BF30BB71FB95B72991757D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F78335CDB98DB7631FD0B9F1 /* Pods-Pocket.debug.xcconfig */,
+				8B4A51A6DA13623753A582A4 /* Pods-Pocket.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		BA07FD56030D316F9192C657 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				48FBE74A5D72E09DD697F669 /* Pods_Pocket.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BC023B78202C5CE500567539 = {
+			isa = PBXGroup;
+			children = (
+				BC676C502032D99F00D04EFC /* README.md */,
+				BC023B83202C5CE600567539 /* Pocket */,
+				BC023B82202C5CE600567539 /* Products */,
+				97BF30BB71FB95B72991757D /* Pods */,
+				BA07FD56030D316F9192C657 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		BC023B82202C5CE600567539 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BC023B81202C5CE600567539 /* Pocket.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BC023B83202C5CE600567539 /* Pocket */ = {
+			isa = PBXGroup;
+			children = (
+				BC58902C202C614400B13FBD /* View */,
+				BC58902B202C613900B13FBD /* ViewModel */,
+				BC589029202C60B700B13FBD /* Services */,
+				BC023B84202C5CE600567539 /* AppDelegate.swift */,
+				BC023B8E202C5CE600567539 /* Assets.xcassets */,
+				BC023B93202C5CE600567539 /* Info.plist */,
+				BC023B8B202C5CE600567539 /* Pocket.xcdatamodeld */,
+			);
+			path = Pocket;
+			sourceTree = "<group>";
+		};
+		BC589029202C60B700B13FBD /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				BC8926C720304B5700CE5933 /* RepeatedManager.swift */,
+				BC589033202C8B7600B13FBD /* DataManager.swift */,
+				BC7B9C0A202CA52300496A5E /* ThemeLayout.swift */,
+				BC8926CD2030835700CE5933 /* Helpers.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		BC58902B202C613900B13FBD /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				BCE415C62031C8C100675073 /* BaseViewModel.swift */,
+				BC58902F202C7E1900B13FBD /* OverviewViewModel.swift */,
+				BC6D2A31202DB3820083C305 /* TransactionViewModel.swift */,
+				BC6BB0702030B86400A42D18 /* TransactionDetailViewModel.swift */,
+				BC6BB0722030C9A500A42D18 /* TransactionModifyViewModel.swift */,
+				BC6BB06C2030AED600A42D18 /* RepeatedViewModel.swift */,
+				BC6BB0782030E68A00A42D18 /* RepeatedDetailViewModel.swift */,
+				BC6BB0742030CF4700A42D18 /* RepeatedModifyViewModel.swift */,
+				BC5BDE3F20325DD10001E648 /* SettingsViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		BC58902C202C614400B13FBD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BC5BDE3E203257880001E648 /* UIViewModifs */,
+				BC5BDE3D203257710001E648 /* ViewControllers */,
+				BCE415C52031C6B800675073 /* Cells */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BC5BDE3D203257710001E648 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				BC023B86202C5CE600567539 /* OverviewViewController.swift */,
+				BC6D2A2F202DAE160083C305 /* TransactionViewController.swift */,
+				BC6BB06E2030B7D500A42D18 /* TransactionDetailViewController.swift */,
+				BC7B9C08202C9AEE00496A5E /* TransactionModifyViewController.swift */,
+				BC8926C320303A3C00CE5933 /* RepeatedViewController.swift */,
+				BC6BB0762030E53300A42D18 /* RepeatedDetailViewController.swift */,
+				BC8926C920305CFC00CE5933 /* RepeatedModifyViewController.swift */,
+				BC8926C520303AF800CE5933 /* SettingsViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		BC5BDE3E203257880001E648 /* UIViewModifs */ = {
+			isa = PBXGroup;
+			children = (
+				BCE415BD2031BF7D00675073 /* GradientView.swift */,
+			);
+			path = UIViewModifs;
+			sourceTree = "<group>";
+		};
+		BCE415C52031C6B800675073 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				BC5BDE3B203247A50001E648 /* GradientCell.swift */,
+				BC5BDE3920323F230001E648 /* BalanceCell.swift */,
+				BC6D2A33202DB5D00083C305 /* TransactionCell.swift */,
+				BCE415BF2031C5BB00675073 /* RepetedCell.swift */,
+				BCE415C12031C5E500675073 /* InfoCell.swift */,
+				BC8926CB2030624C00CE5933 /* FormCell.swift */,
+				BCE415C32031C61000675073 /* LinkCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BC023B80202C5CE600567539 /* Pocket */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BC023B96202C5CE600567539 /* Build configuration list for PBXNativeTarget "Pocket" */;
+			buildPhases = (
+				25DF5D96F1879E406488FFC6 /* [CP] Check Pods Manifest.lock */,
+				BC023B7D202C5CE600567539 /* Sources */,
+				BC023B7E202C5CE600567539 /* Frameworks */,
+				BC023B7F202C5CE600567539 /* Resources */,
+				BCBABD81360DEE49089E802B /* [CP] Embed Pods Frameworks */,
+				268FD4F2383D6090CDD39824 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Pocket;
+			productName = Pocket;
+			productReference = BC023B81202C5CE600567539 /* Pocket.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BC023B79202C5CE500567539 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Vojtěch Tomas";
+				TargetAttributes = {
+					BC023B80202C5CE600567539 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 0;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = BC023B7C202C5CE500567539 /* Build configuration list for PBXProject "Pocket" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BC023B78202C5CE500567539;
+			productRefGroup = BC023B82202C5CE600567539 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BC023B80202C5CE600567539 /* Pocket */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BC023B7F202C5CE600567539 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC023B8F202C5CE600567539 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		25DF5D96F1879E406488FFC6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Pocket-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		268FD4F2383D6090CDD39824 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Pocket/Pods-Pocket-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BCBABD81360DEE49089E802B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Pocket/Pods-Pocket-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Pocket/Pods-Pocket-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BC023B7D202C5CE600567539 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC7B9C09202C9AEE00496A5E /* TransactionModifyViewController.swift in Sources */,
+				BC5BDE3C203247A50001E648 /* GradientCell.swift in Sources */,
+				BC8926C420303A3C00CE5933 /* RepeatedViewController.swift in Sources */,
+				BC6D2A32202DB3820083C305 /* TransactionViewModel.swift in Sources */,
+				BC023B87202C5CE600567539 /* OverviewViewController.swift in Sources */,
+				BC6BB06F2030B7D500A42D18 /* TransactionDetailViewController.swift in Sources */,
+				BC6BB0752030CF4700A42D18 /* RepeatedModifyViewModel.swift in Sources */,
+				BC023B85202C5CE600567539 /* AppDelegate.swift in Sources */,
+				BC589030202C7E1900B13FBD /* OverviewViewModel.swift in Sources */,
+				BC7B9C0B202CA52300496A5E /* ThemeLayout.swift in Sources */,
+				BCE415C22031C5E500675073 /* InfoCell.swift in Sources */,
+				BC6BB06D2030AED600A42D18 /* RepeatedViewModel.swift in Sources */,
+				BC589034202C8B7600B13FBD /* DataManager.swift in Sources */,
+				BC6BB0732030C9A500A42D18 /* TransactionModifyViewModel.swift in Sources */,
+				BC023B8D202C5CE600567539 /* Pocket.xcdatamodeld in Sources */,
+				BC6D2A34202DB5D00083C305 /* TransactionCell.swift in Sources */,
+				BCE415BE2031BF7D00675073 /* GradientView.swift in Sources */,
+				BC6BB0712030B86400A42D18 /* TransactionDetailViewModel.swift in Sources */,
+				BCE415C72031C8C100675073 /* BaseViewModel.swift in Sources */,
+				BCE415C02031C5BB00675073 /* RepetedCell.swift in Sources */,
+				BC5BDE3A20323F230001E648 /* BalanceCell.swift in Sources */,
+				BC6D2A30202DAE160083C305 /* TransactionViewController.swift in Sources */,
+				BC8926CE2030835700CE5933 /* Helpers.swift in Sources */,
+				BC8926CA20305CFC00CE5933 /* RepeatedModifyViewController.swift in Sources */,
+				BC5BDE4020325DD10001E648 /* SettingsViewModel.swift in Sources */,
+				BC8926C620303AF800CE5933 /* SettingsViewController.swift in Sources */,
+				BC6BB0772030E53300A42D18 /* RepeatedDetailViewController.swift in Sources */,
+				BCE415C42031C61000675073 /* LinkCell.swift in Sources */,
+				BC8926CC2030624C00CE5933 /* FormCell.swift in Sources */,
+				BC6BB0792030E68A00A42D18 /* RepeatedDetailViewModel.swift in Sources */,
+				BC8926C820304B5700CE5933 /* RepeatedManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		BC023B94202C5CE600567539 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BC023B95202C5CE600567539 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BC023B97202C5CE600567539 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F78335CDB98DB7631FD0B9F1 /* Pods-Pocket.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 42G983NPKK;
+				INFOPLIST_FILE = Pocket/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cz.cvut.fit.pocket;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		BC023B98202C5CE600567539 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8B4A51A6DA13623753A582A4 /* Pods-Pocket.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 42G983NPKK;
+				INFOPLIST_FILE = Pocket/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cz.cvut.fit.pocket;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BC023B7C202C5CE500567539 /* Build configuration list for PBXProject "Pocket" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC023B94202C5CE600567539 /* Debug */,
+				BC023B95202C5CE600567539 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BC023B96202C5CE600567539 /* Build configuration list for PBXNativeTarget "Pocket" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC023B97202C5CE600567539 /* Debug */,
+				BC023B98202C5CE600567539 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		BC023B8B202C5CE600567539 /* Pocket.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				BC023B8C202C5CE600567539 /* Pocket.xcdatamodel */,
+			);
+			currentVersion = BC023B8C202C5CE600567539 /* Pocket.xcdatamodel */;
+			path = Pocket.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = BC023B79202C5CE500567539 /* Project object */;
+}
